@@ -49,7 +49,7 @@ public class Ventana extends JFrame {
 
         //PANEL 1 Formulario
         panel1 = new JPanel(new FlowLayout());
-        panel1.setBackground(new Color(255, 166, 166));
+        panel1.setBackground(new Color(235, 245, 223));
         lblId = new JLabel("Id");
         lblNombre = new JLabel("Nombre");
         lblColor = new JLabel("Color");
@@ -82,7 +82,7 @@ public class Ventana extends JFrame {
 
         //PANEL 2 Tabla
         panel2 = new JPanel(new FlowLayout());
-        panel2.setBackground(new Color(172, 255, 166));
+        panel2.setBackground(new Color(186, 212, 170));
         btnCargar = new JButton("Cargar");
         panel2.add(btnCargar);
         tblTablaReptil = new JTable();
@@ -91,15 +91,15 @@ public class Ventana extends JFrame {
 
         //PANEL 3 Imagen
         panel3 = new JPanel(new FlowLayout());
-        panel3.setBackground(new Color(166, 255, 252));
+        panel3.setBackground(new Color(212, 212, 170));
         lblImagen = new JLabel();
         panel3.add(lblImagen);
         this.getContentPane().add(panel3, BorderLayout.CENTER);
 
 
-        //PANEL 4 Delete y la otra wea
+        //PANEL 4 Delete y Update
         panel4 = new JPanel(new FlowLayout());
-        panel4.setBackground(new Color(215, 166, 255));
+        panel4.setBackground(new Color(237, 180, 88));
         lblIdAc = new JLabel("Nuevo Id:");
         lblNombreAc = new JLabel("Nuevo Nombre:");
         lblColorAc = new JLabel("Nuevo Color:");

@@ -153,13 +153,13 @@ public class ModeloTablaReptil implements TableModel {
         try {
             return repdao.update(reptil);
         } catch (SQLException e) {
-            e.printStackTrace(); // Opcionalmente, puedes mostrar un mensaje de error o registrar la excepción
+            e.printStackTrace();
             return false;
         }
     }
     public boolean eliminarReptil(int id) {
         try {
-            String idString = Integer.toString(id); // Convertir el int a String
+            String idString = Integer.toString(id);
             if (repdao.delete(idString)) {
                 datos.removeIf(reptil -> reptil.getId() == id);
                 return true;
